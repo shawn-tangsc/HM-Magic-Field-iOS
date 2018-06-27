@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-s.name         = "HMMagicField"
+s.name         = "HMWeexMagicField"
 s.version      = "1.0.0"
 s.summary      = "HMMagicField Source ."
 s.homepage     = 'https://github.com/shawn-tangsc/HM-Magic-Field-iOS'
