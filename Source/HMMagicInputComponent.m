@@ -47,6 +47,16 @@ WX_PlUGIN_EXPORT_COMPONENT(hm-magic-input,HMMagicInputComponent);
     _inputView.delegate = self;
 }
 
+- (void)updateBindingData:(NSDictionary *)data{
+    [super updateBindingData:data];
+}
+
+- (void)updateAttributes:(NSDictionary *)attributes
+{
+    [super updateAttributes:attributes];
+
+}
+
 - (UIView *)loadView{
     _inputView = [[HMMagicField alloc] init];
     if(self.animationFont){

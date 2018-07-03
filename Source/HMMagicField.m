@@ -83,7 +83,11 @@
 
 - (void)setFrame:(CGRect)frame{
     [super setFrame:frame];
-    self.placeholderAnimationLbl.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
+    if (self.text.length > 0) {
+        self.placeholderAnimationLbl.frame =  self.placeholderAnimationLbl.frame;
+    }else{
+        self.placeholderAnimationLbl.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
+    }
     if (self.moveDistance == 0) {
         self.moveDistance = frame.size.height / 2;
     }

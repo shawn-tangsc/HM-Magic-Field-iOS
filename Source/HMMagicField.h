@@ -35,4 +35,7 @@
 @property (nonatomic, assign) BOOL deleteWords;
 @property (nonatomic, strong) NSString *editWords;
 
+- (void)upAnimation;
+- (void)restoreAnimation;
+
 @end
