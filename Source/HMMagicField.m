@@ -83,7 +83,7 @@
 
 - (void)setFrame:(CGRect)frame{
     [super setFrame:frame];
-    if (self.text.length > 0) {
+    if (self.text.length > 0  || [self isFirstResponder]) {
         self.placeholderAnimationLbl.frame =  self.placeholderAnimationLbl.frame;
     }else{
         self.placeholderAnimationLbl.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
