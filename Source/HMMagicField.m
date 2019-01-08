@@ -100,6 +100,13 @@
     
 }
 
+- (void)setEditWords:(NSString *)editWords{
+    if (editWords.length > 0) {
+        [self upAnimation];
+    }else{
+        [self restoreAnimation];
+    }
+}
 
 /**
  *  文字提醒set方法
